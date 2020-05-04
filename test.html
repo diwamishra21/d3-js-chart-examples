@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+<head>  
+  <script type="text/javascript">
+  window.onload = function () {
+    var chart = new CanvasJS.Chart("chartContainer",
+    {
+      title:{
+      text: "Multi-Series Line Chart"  
+      },
+      data: [
+      {        
+        type: "line",
+        dataPoints: [
+        { x: 10, y: 3 },
+        { x: 20, y: 15},
+        { x: 30, y: 20 },
+        { x: 40, y: 25 },
+        { x: 50, y: 35 },
+        { x: 60, y: 45 },
+        { x: 70, y: 55 },
+        { x: 80, y: 65 },
+        { x: 90, y: 75},
+        { x: 100, y: 97}
+        ]
+      },
+        {        
+        type: "line",
+        dataPoints: [
+        { x: 10, y: 4 },
+        { x: 20, y: 15},
+        { x: 30, y: 29 },
+        { x: 40, y: 41 },
+        { x: 50, y: 49 },
+        { x: 60, y: 61 },
+        { x: 70, y: 69 },
+        { x: 80, y: 81 },
+        { x: 90, y: 91},
+        { x: 100, y: 99}
+        ]
+      },
+        {        
+        type: "line",
+        dataPoints: [
+        { x: 10, y: 1 },
+        { x: 20, y: 20},
+        { x: 30, y: 40 },
+        { x: 40, y: 59 },
+        { x: 50, y: 65 },
+        { x: 60, y: 75 },
+        { x: 70, y: 83 },
+        { x: 80, y: 90 },
+        { x: 90, y: 93},
+        { x: 100, y: 98}
+        ]
+      }
+      ]
+    });
+
+    chart.render();
+  }
+  </script>
+ <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script></head>
+<body>
+  <div id="chartContainer" style="height: 370px; max-width: 370px; margin: 0px auto;">
+  </div>
+</body>
+</html>
